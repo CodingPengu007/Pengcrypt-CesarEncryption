@@ -32,7 +32,6 @@ def first_decision():
             decision_made = True
             encrypting_entrance()
         elif answer in ["U", "u", "unscrambling", "unscrambling mode"]:
-            decision_made = True
             print("-> unscrambling mode, activated")
             print("")
             decision_made = True
