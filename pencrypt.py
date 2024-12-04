@@ -1,16 +1,19 @@
-#ImportedObjects#
 import random
 import time
+import os
 
 #starting program#
 print("starting program...")
 time.sleep(0.5)
 print("started sucessfully")
 time.sleep(0.1)
+print("")
+
+os.system('cls' if os.name == 'nt' else 'clear')
 
 #version#
-print("-> program version: 0.798 / stranded plaice")
-print("   a encrypting software made by Pengu")
+print("program version: 1.0 / surfing penguin")
+print("a encrypting software made by Pengu")
 print("")
 
 #other version-names#
@@ -43,6 +46,7 @@ def first_decision():
 
 def encrypt_or_unscramble():
 
+    os.system('cls' if os.name == 'nt' else 'clear')
     decision_made = False
     while decision_made == False:
         print("Please press E to encrypt and U to unscramble messages.")
@@ -64,6 +68,7 @@ def encrypt_or_unscramble():
 
 def encrypting_entrance():
 
+    os.system('cls' if os.name == 'nt' else 'clear')
     print("Lets encrypt your text message!")
     print("-------------------------------------------->")
     print("Firstly we need an Pencrypting-Code, you can choose your")
@@ -114,6 +119,7 @@ def encrypt():
         else:
             print(" -> Sorry please press O, R or X thank you. ")
             print("")
+            
     print(f"Nice, your Pencrypting-Code is {code}, now we can start encrypting your textmessage.")
     message = input("Please enter it here: ")
     #encrypting#
@@ -131,6 +137,7 @@ def encrypt():
 
 def unscramble():
 
+    os.system('cls' if os.name == 'nt' else 'clear')
     print("-> Lets unscramble your text message!")
     print("")
 
@@ -155,6 +162,7 @@ def unscramble():
             print(" -> Sorry, please enter your Pencrypt-Code or press X to exit.")
             print("")
 
+    os.system('cls' if os.name == 'nt' else 'clear')
     print("Nice, now we can start unscrambling your textmessage.")
     message = input("Please enter it here: ")
     #unscrambling#
